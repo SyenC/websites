@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor's Lounge | Summer Group Classes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <span class="logo-icon">📚</span>
+                    Tutor's Lounge
+                </a>
+
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search classes...">
+                    <button id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-results">
+                        <!-- Search results will be populated here -->
+                    </div>
+                </div>
+
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#summer-classes">Summer Classes</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#testimonials">Blog</a></li>
+                    <li><a href="#" class="btn btn-primary">Register Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Summer Group Classes for Academic Excellence</h1>
+                <p>Join our expertly designed summer programs that combine learning with fun. Explore our exciting online class offerings and MAY schedule below. Feel free to browse and register–let's make this summer a season of fun learning and growth together!</p>
+                <div class="hero-buttons">
+                    <a href="#summer-classes" class="btn btn-lg btn-secondary">Explore Classes</a>
+                    <a href="#contact" class="btn btn-lg btn-outline">Sign Up Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="summer-classes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Summer Group Classes</h2>
+                <p>Choose from our carefully curated selection of engaging and educational summer courses designed to help students advance their skills while enjoying the learning process.</p>
+            </div>
+            
+            <div class="classes-filter">
+                <button class="filter-btn active" data-filter="all">All Classes</button>
+                <button class="filter-btn" data-filter="math">Mathematics</button>
+                <button class="filter-btn" data-filter="science">Science</button>
+                <button class="filter-btn" data-filter="english">English</button>
+                <button class="filter-btn" data-filter="filipino">Filipino</button>
+                <button class="filter-btn" data-filter="arts">Arts</button>
+                <button class="filter-btn" data-filter="reading">Reading</button>
+                <button class="filter-btn" data-filter="playgroup">Playgroup</button>
+            </div>
+            
+            <div class="classes-grid">
+                <div class="course-card" data-category="math reading">
+                    <div class="course-image">
+                        <img src="/api/placeholder/400/300" alt="Mathematics Adventure">
+                        <span class="course-tag">4-6 y/o</span>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Reading & Math Group Class</h3>
+                        <div class="course-meta">
+                            <div><i>⏱️</i> 10:00-11:00 AM - 4:00-5:00 PM</div>
+                        </div>
+                        <p class="course-description">A fun and interactive class combining early reading skills with foundational mathematics concepts for young learners.</p>
+                        <div class="course-footer">
+                            <span class="course-price">Ms. Robbie</span>
+                            <a href="#" class="btn btn-primary view-schedule" data-professor="Ms. Robbie" data-class="Reading & Math Group Class">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-category="reading">
+                    <div class="course-image">
+                        <img src="/api/placeholder/400/300" alt="Science Explorers">
+                        <span class="course-tag">4-6 y/o</span>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Reading</h3>
+                        <div class="course-meta">
+                            <div><i>⏱️</i>  2:00 - 3:00 PM</div>
+                        </div>
+                        <p class="course-description">Develop early reading skills through engaging stories, phonics activities, and sight word practice.</p>
+                        <div class="course-footer">
+                            <span class="course-price">Ms. Shiela</span>
+                            <a href="#" class="btn btn-primary view-schedule" data-professor="Ms. Shiela" data-class="Reading">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-category="filipino">
+                    <div class="course-image">
+                        <img src="/api/placeholder/400/300" alt="Creative Writing Workshop">
+                        <span class="course-tag">4-6 y/o</span>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Filipino Reading</h3>
+                        <div class="course-meta">
+                            <div><i>⏱️</i>3:00-4:00 pm</div>
+                        </div>
+                        <p class="course-description">Introduction to Filipino language reading skills through stories, songs, and interactive activities.</p>
+                        <div class="course-footer">
+                            <span class="course-price">Ms. Shiela</span>
+                            <a href="#" class="btn btn-primary view-schedule" data-professor="Ms. Shiela" data-class="Filipino Reading">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-category="playgroup">
+                    <div class="course-image">
+                        <img src="/api/placeholder/400/300" alt="Coding for Kids">
+                        <span class="course-tag">4-6 y/o</span>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Playgroup Class</h3>
+                        <div class="course-meta">
+                            <div><i>⏱️</i> 4:00 - 5:00 PM</div>
+                        </div>
+                        <p class="course-description">A social and educational playgroup that helps children develop social skills while having fun with peers.</p>
+                        <div class="course-footer">
+                            <span class="course-price">Ms. Robbie</span>
+                            <a href="#" class="btn btn-primary view-schedule" data-professor="Ms. Robbie" data-class="Playgroup Class">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-category="filipino">
+                    <div class="course-image">
+                        <img src="/api/placeholder/400/300" alt="Primary Level Group Classes ">
+                        <span class="course-tag">Grade  1-3</span>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Filipino for Primary Level</h3>
+                        <div class="course-meta">
+                        <div><i>⏱️</i> 2:00 - 3:00 PM</div>
+                        </div>
+                        <p class="course-description">Filipino language classes designed specifically for primary school students to develop reading and writing skills.</p>
+                        <div class="course-footer">
+                            <span class="course-price">Ms. Robbie</span>
+                            <a href="#" class="btn btn-primary view-schedule" data-professor="Ms. Robbie" data-class="Filipino for Primary Level">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-category="arts">
+                    <div class="course-image">
+                        <img src="/api/placeholder/400/300" alt="Arts and Crafts">
+                        <span class="course-tag">Grades 7-9</span>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Arts and Crafts</h3>
+                        <div class="course-meta">
+                            <div><i>⏱️</i> 5:00 - 6:00 PM</div>
+                        </div>
+                        <p class="course-description">Explore creativity through various art forms, techniques, and materials in this hands-on arts and crafts class.</p>
+                        <div class="course-footer">
+                            <span class="course-price">Ms. Robbie</span>
+                            <a href="#" class="btn btn-primary view-schedule" data-professor="Ms. Robbie" data-class="Arts and Crafts">Schedule</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Wall with Weekly Calendar -->
+    <div class="schedule-wall" id="schedule-wall">
+        <div class="schedule-container">
+            <button class="close-schedule" id="close-schedule">✕</button>
+            <h2 id="schedule-title">Professor's Schedule</h2>
+            <p id="schedule-description">View available time slots for May and register for classes.</p>
+            
+            <div class="week-selector">
+                <button class="week-btn active" data-week="week1">May 6-10</button>
+                <button class="week-btn" data-week="week2">May 13-17</button>
+                <button class="week-btn" data-week="week3">May 20-24</button>
+                <button class="week-btn" data-week="week4">May 27-31</button>
+            </div>
+            
+            <div id="schedule-calendar">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schedule-table-body">
+                        <!-- Schedule content will be dynamically loaded here -->
+                    </tbody>
+                </table>
+                
+                <!-- Add Register button below the table -->
+                <div class="schedule-actions">
+                    <button class="register-schedule-btn" id="register-schedule-btn">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Class Registration Modal -->
+    <div class="schedule-wall" id="registration-modal">
+        <div class="schedule-container">
+            <button class="close-schedule" id="close-registration">✕</button>
+            <h2 class="modal-title">Register for Class</h2>
+            
+            <div class="registration-details" id="registration-details">
+                <p><strong>Class:</strong> <span id="reg-class-name">Reading & Math</span></p>
+                <p><strong>Professor:</strong> <span id="reg-professor">Ms. Robbie</span></p>
+                <p><strong>Date:</strong> <span id="reg-date">Monday, May 6, 2025</span></p>
+                <p><strong>Time:</strong> <span id="reg-time">10:00 AM - 11:00 AM</span></p>
+            </div>
+            
+            <form id="class-registration-form">
+                <div class="form-group">
+                    <label for="student-name">Student Name</label>
+                    <input type="text" id="student-name" name="student-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="student-age">Student Age</label>
+                    <input type="number" id="student-age" name="student-age" min="3" max="18" required>
+                </div>
+                <div class="form-group">
+                    <label for="parent-name">Parent/Guardian Name</label>
+                    <input type="text" id="parent-name" name="parent-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="parent-email">Email</label>
+                    <input type="email" id="parent-email" name="parent-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="parent-phone">Phone</label>
+                    <input type="tel" id="parent-phone" name="parent-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="special-notes">Special Notes (Optional)</label>
+                    <textarea id="special-notes" name="special-notes" rows="3"></textarea>
+                </div>
+                
+                <input type="hidden" id="hidden-class-name" name="class-name">
+                <input type="hidden" id="hidden-professor-name" name="professor-name">
+                <input type="hidden" id="hidden-class-date" name="class-date">
+                <input type="hidden" id="hidden-class-time" name="class-time">
+                
+                <button type="submit" class="btn btn-primary">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Other sections -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Learn more about our experienced educators and teaching philosophy</p>
+            </div>
+            <div class="about-content">
+                <p>About content will go here</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Discover our range of educational services and programs</p>
+            </div>
+            <div class="services-content">
+                <p>Services content will go here</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonials</h2>
+                <p>What parents and students say about our summer classes</p>
+            </div>
+            <div class="testimonials-content">
+                <p>Testimonials content will go here</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Have questions about our summer programs? Get in touch with us!</p>
+            </div>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h2 class="footer-title">Tutor's Lounge</h2>
+                    <p class="footer-text">Providing quality education and enrichment programs to help students succeed academically and grow personally.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h2 class="footer-title">Quick Links</h2>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#summer-classes">Summer Classes</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2 class="footer-title">Contact Info</h2>
+                    <p class="footer-text"><i>📍</i> 123 Education Avenue, Learning City</p>
+                    <p class="footer-text"><i>📞</i> (123) 456-7890</p>
+                    <p class="footer-text"><i>✉️</i> info@tutorslounge.com</p>
+                    <p class="footer-text"><i>⏰</i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Tutor's Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Class Filter Functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const courseCards = document.querySelectorAll('.course-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                
+                courseCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const categories = card.getAttribute('data-category').split(' ');
+                        if (categories.includes(filter)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Schedule Wall Functionality
+        const scheduleWall = document.getElementById('schedule-wall');
+        const closeScheduleBtn = document.getElementById('close-schedule');
+        const scheduleButtons = document.querySelectorAll('.view-schedule');
+        const scheduleTitle = document.getElementById('schedule-title');
+        const scheduleDescription = document.getElementById('schedule-description');
+        const scheduleTableBody = document.getElementById('schedule-table-body');
+        const weekButtons = document.querySelectorAll('.week-btn');
+
+        // Close Schedule Wall
+        closeScheduleBtn.addEventListener('click', () => {
+            scheduleWall.style.display = 'none';
+        });
+
+        // Show Schedule Wall when class schedule button is clicked
+        scheduleButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const professor = btn.getAttribute('data-professor');
+                const className = btn.getAttribute('data-class');
+                
+                scheduleTitle.textContent = `${className} with ${professor}`;
+                scheduleDescription.textContent = `View curriculum and register for May classes.`;
+                
+                // Show the schedule wall
+                scheduleWall.style.display = 'flex';
+                
+                // Load curriculum-based schedule
+                loadCurriculumSchedule(professor, className);
+            });
+        });
+
+        // Load curriculum-based schedule data
+        function loadCurriculumSchedule(professor, className) {
+            // Clear current schedule content
+            const scheduleCalendar = document.getElementById('schedule-calendar');
+            scheduleCalendar.innerHTML = '';
+            
+            // Create a styled content div for the curriculum
+            const curriculumContent = document.createElement('div');
+            curriculumContent.className = 'curriculum-content';
+            
+            // Curriculum schedule data - customize based on class
+            if (className === 'Reading & Math Group Class' && professor === 'Ms. Robbie') {
+                curriculumContent.innerHTML = `
+                    
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li><strong>Geometry:</strong>
+                                            <ul>
+                                                <li>2d/Flat Shapes</li>
+                                                <li>3d/Solid Shapes</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Geometry</strong></li>
+                                        <li><strong>Symmetry</strong></li>
+                                        <li>Drawing line of Symmetry</li>
+                                        <li>Completing Symmetric Figure</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Geometry:</strong></li>
+                                        <li>Patterns</li>
+                                        <li>Repeating Pattern</li>
+                                        <li>Growing Pattern</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Geometry:</strong></li>
+                                        <li>Patterns</li>
+                                        <li>Repeating Pattern</li>
+                                        <li>Growing Pattern</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li><strong>Reading:</strong></li>
+                                        <li>Reading Comprehension</li>
+                                        <li>Listening Comprehension</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Figure</strong></li>
+                                        <li><strong>Reading:</strong></li>
+                                        <li>Identifying Sentence</li>
+                                        <li>Identifying Phrase</li>
+                                        <li>Distinguishing Sentence and Phrase</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Reading:</strong></li>
+                                        <li>Affixes</li>
+                                        <li>Prefixes</li>
+                                        <li>Suffixes</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Reading:</strong></li>
+                                        <li>Interpreting Simple Maps</li>
+                                        <li>Maps Symbols</li>
+                                        <li>Completion Day</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="schedule-note">
+                        <p><strong>Class Schedule:</strong> Monday, Wednesday, Friday</p>
+                        <p><strong>Morning Session:</strong> 10:00 - 11:00 AM</p>
+                        <p><strong>Afternoon Session:</strong> 4:00 - 5:00 PM</p>
+                    </div>
+                    
+                    <div class="schedule-actions">
+                        <button class="register-schedule-btn" id="register-schedule-btn">Register</button>
+                    </div>
+                `;
+            } else if (className === 'Filipino Reading' && professor === 'Ms. Shiela') {
+                curriculumContent.innerHTML = `
+                    <h3>${className} (3:00-4:00 PM)</h3>
+                    <h4>Teacher: ${professor}</h4>
+                    
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Pagkilala sa mga Tunog</li>
+                                        <li>Mga Pantig at Salita</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Pagbasa ng mga Simpleng Pangungusap</li>
+                                        <li>Pagbibigay-kahulugan sa mga Salita</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Pagbabasa ng Maikling Kuwento</li>
+                                        <li>Pag-unawa sa Binasa</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Pagbabanghay ng mga Salita</li>
+                                        <li>Pagbuo ng Sariling Kuwento</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="schedule-note">
+                        <p><strong>Class Schedule:</strong> Monday, Wednesday, Friday</p>
+                        <p><strong>Session:</strong> 3:00 - 4:00 PM</p>
+                    </div>
+                    
+                    <div class="schedule-actions">
+                        <button class="register-schedule-btn" id="register-schedule-btn">Register</button>
+                    </div>
+                `;
+            } else if (className === 'Reading' && professor === 'Ms. Shiela') {
+                curriculumContent.innerHTML = `
+                    <h3>${className} (2:00-3:00 PM)</h3>
+                    <h4>Teacher: ${professor}</h4>
+                    
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Letter Recognition</li>
+                                        <li>Phonics Basics</li>
+                                        <li>CVC Words</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Sight Words</li>
+                                        <li>Simple Sentences</li>
+                                        <li>Reading Comprehension</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Short Stories</li>
+                                        <li>Retelling Stories</li>
+                                        <li>Listening Skills</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Story Elements</li>
+                                        <li>Character Analysis</li>
+                                        <li>Reading Fluency</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="schedule-note">
+                        <p><strong>Class Schedule:</strong> Tuesday, Thursday</p>
+                        <p><strong>Session:</strong> 2:00 - 3:00 PM</p>
+                    </div>
+                    
+                    <div class="schedule-actions">
+                        <button class="register-schedule-btn" id="register-schedule-btn">Register</button>
+                    </div>
+                `;
+            } else if (className === 'Playgroup Class' && professor === 'Ms. Robbie') {
+                curriculumContent.innerHTML = `
+                    <h3>${className} (4:00-5:00 PM)</h3>
+                    <h4>Teacher: ${professor}</h4>
+                    
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Greeting Friends</li>
+                                        <li>Circle Time Activities</li>
+                                        <li>Sharing Day</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Story Time</li>
+                                        <li>Movement Games</li>
+                                        <li>Collaborative Play</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Arts & Crafts</li>
+                                        <li>Sensory Play</li>
+                                        <li>Simple Group Games</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Music & Dance</li>
+                                        <li>Outdoor Play</li>
+                                        <li>End of Month Celebration</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="schedule-note">
+                        <p><strong>Class Schedule:</strong> Tuesday, Thursday</p>
+                        <p><strong>Session:</strong> 4:00 - 5:00 PM</p>
+                    </div>
+                    
+                    <div class="schedule-actions">
+                        <button class="register-schedule-btn" id="register-schedule-btn">Register</button>
+                    </div>
+                `;
+            } else if (className === 'Filipino for Primary Level' && professor === 'Ms. Robbie') {
+                curriculumContent.innerHTML = `
+                    <h3>${className} (2:00-3:00 PM)</h3>
+                    <h4>Teacher: ${professor}</h4>
+                    
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Mga Bahagi ng Pananalita</li>
+                                        <li>Pangngalan at Panghalip</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Pagbuo ng Pangungusap</li>
+                                        <li>Panitikan: Maikling Kwento</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Pang-uri at Pang-abay</li>
+                                        <li>Panitikan: Tula</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Pandiwa at Pagsasalaysay</li>
+                                        <li>Panitikan: Alamat</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="schedule-note">
+                        <p><strong>Class Schedule:</strong> Monday, Wednesday, Friday</p>
+                        <p><strong>Session:</strong> 2:00 - 3:00 PM</p>
+                    </div>
+                    
+                    <div class="schedule-actions">
+                        <button class="register-schedule-btn" id="register-schedule-btn">Register</button>
+                    </div>
+                `;
+            } else if (className === 'Arts and Crafts' && professor === 'Ms. Robbie') {
+                curriculumContent.innerHTML = `
+                    <h3>${className} (5:00-6:00 PM)</h3>
+                    <h4>Teacher: ${professor}</h4>
+                    
+                    <table class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Drawing Techniques</li>
+                                        <li>Color Theory</li>
+                                        <li>Project: Self-Portrait</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Painting Styles</li>
+                                        <li>Watercolor Techniques</li>
+                                        <li>Project: Landscape Art</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Mixed Media</li>
+                                        <li>Collage Techniques</li>
+                                        <li>Project: Abstract Art</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Sculpture Basics</li>
+                                        <li>3D Art Projects</li>
+                                        <li>Exhibition Preparation</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="schedule-note">
+                        <p><strong>Class Schedule:</strong> Monday, Wednesday</p>
+                        <p><strong>Session:</strong> 5:00 - 6:00 PM</p>
+                    </div>
+                    
+                    <div class="schedule-actions">
+                        <button class="register-schedule-btn" id="register-schedule-btn">Register</button>
+                    </div>
+                `;
+            } else {
+                // Default template for other classes
+                curriculumContent.innerHTML = `
+                    <h3>${className}</h3>
+                    <h4>Teacher: ${professor}</h4>
+                    
+                    <p>Weekly curriculum details will be provided upon registration.</p>
+                    
+                    <div class="schedule-actions">
+                        <button class="register-schedule-btn" id="register-schedule-btn">Register</button>
+                    </div>
+                `;
+            }
+            
+            // Add the curriculum content to the schedule calendar
+            scheduleCalendar.appendChild(curriculumContent);
+            
+            // Connect the register button event
+            const registerBtn = document.getElementById('register-schedule-btn');
+            registerBtn.addEventListener('click', () => {
+                openRegistrationModal(professor, className);
+            });
+        }
+
+        // Week selection for schedule
+        weekButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                weekButtons.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                // Update schedule table based on selected week
+                // This would be implemented with actual data
+            });
+        });
+
+        // Registration Modal Functionality
+        const registrationModal = document.getElementById('registration-modal');
+        const closeRegistrationBtn = document.getElementById('close-registration');
+        const registrationForm = document.getElementById('class-registration-form');
+        
+        function openRegistrationModal(professor, className) {
+            // Set registration details
+            document.getElementById('reg-class-name').textContent = className;
+            document.getElementById('reg-professor').textContent = professor;
+            
+            // Set the current date based on selected week (simplified for example)
+            const today = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('reg-date').textContent = today.toLocaleDateString('en-US', options);
+            
+            // Set time based on class (simplified)
+            let timeSlot = "10:00 AM - 11:00 AM";
+            if (className === "Reading") {
+                timeSlot = "2:00 PM - 3:00 PM";
+            } else if (className === "Filipino Reading") {
+                timeSlot = "3:00 PM - 4:00 PM";
+            } else if (className === "Playgroup Class") {
+                timeSlot = "4:00 PM - 5:00 PM";
+            } else if (className === "Arts and Crafts") {
+                timeSlot = "5:00 PM - 6:00 PM";
+            } else if (className === "Filipino for Primary Level") {
+                timeSlot = "2:00 PM - 3:00 PM";
+            }
+            document.getElementById('reg-time').textContent = timeSlot;
+            
+            // Set hidden fields for form submission
+            document.getElementById('hidden-class-name').value = className;
+            document.getElementById('hidden-professor-name').value = professor;
+            document.getElementById('hidden-class-date').value = today.toLocaleDateString('en-US');
+            document.getElementById('hidden-class-time').value = timeSlot;
+            
+            // Show registration modal
+            registrationModal.style.display = 'flex';
+        }
+        
+        // Close Registration Modal
+        closeRegistrationBtn.addEventListener('click', () => {
+            registrationModal.style.display = 'none';
+        });
+        
+        // Handle Registration Form Submission
+        registrationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the data to a server
+            // For this example, we'll just show an alert
+            alert('Registration submitted successfully! We will contact you shortly to confirm your enrollment.');
+            
+            // Close the modal
+            registrationModal.style.display = 'none';
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === scheduleWall) {
+                scheduleWall.style.display = 'none';
+            }
+            if (e.target === registrationModal) {
+                registrationModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
