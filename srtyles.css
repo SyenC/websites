@@ -1,0 +1,655 @@
+/* Global Styles */
+:root {
+    --primary-color: #6046ca;
+    --primary-dark: #4a35a0;
+    --primary-light: #8066e0;
+    --secondary-color: #ff8c42;
+    --secondary-dark: #e67e3c;
+    --gray-light: #f8f9fa;
+    --gray-medium: #e9ecef;
+    --text-dark: #343a40;
+    --text-light: #6c757d;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header & Navigation */
+  header {
+    padding: 15px 0;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .logo-icon {
+    margin-right: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    margin-left: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: var(--primary-color);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--secondary-dark);
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+  }
+  
+  .btn-outline:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+  }
+  
+  .btn-lg {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+
+  /* Search Bar */
+.search-container {
+  position: relative;
+  margin-right: 20px;
+}
+
+#search-bar {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid var(--gray-medium);
+  width: 200px;
+  transition: width 0.3s;
+}
+
+#search-bar:focus {
+  width: 250px;
+  outline: none;
+  border-color: var(--primary-light);
+}
+
+#search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+  z-index: 10;
+}
+  
+  /* Hero Section */
+  .hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -150px;
+    left: -150px;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 80px 0;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .section-header h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Filter Buttons */
+  .classes-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .filter-btn {
+    padding: 8px 16px;
+    border-radius: 50px;
+    background-color: var(--gray-light);
+    border: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .filter-btn:hover {
+    background-color: var(--gray-medium);
+  }
+  
+  .filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  /* Classes Grid */
+  .classes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+  }
+  
+  .course-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .course-tag {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  
+  .course-content {
+    padding: 20px;
+  }
+  
+  .course-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  .course-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+  
+  .course-meta div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .course-description {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+  }
+  
+  .course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .course-price {
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  /* Schedule Wall */
+  .schedule-wall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .schedule-container {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .close-schedule {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-light);
+  }
+  
+  .week-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .week-btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: var(--gray-light);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .week-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  /* Curriculum Table */
+  .curriculum-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .curriculum-table th, .curriculum-table td {
+    padding: 12px;
+    border: 1px solid var(--gray-medium);
+  }
+  
+  .curriculum-table th {
+    background-color: var(--primary-light);
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .curriculum-table ul {
+    padding-left: 20px;
+  }
+  
+  .schedule-note {
+    background-color: var(--gray-light);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .register-schedule-btn {
+    padding: 10px 25px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-schedule-btn:hover {
+    background-color: var(--secondary-dark);
+  }
+  
+  /* Registration Modal */
+  .registration-details {
+    background-color: var(--gray-light);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray-medium);
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 60px 0 20px;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer-text {
+    margin-bottom: 10px;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--white);
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-social a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .footer-links {
+    list-style: none;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  
+  .footer-links a:hover {
+    opacity: 0.8;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 992px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    
+    .section-header h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+    
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: var(--white);
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      transform: translateY(-150%);
+      transition: transform 0.3s;
+      z-index: 99;
+    }
+    
+    .nav-links.show {
+      transform: translateY(0);
+    }
+    
+    .nav-links li {
+      margin: 10px 0;
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+    
+    .section-header h2 {
+      font-size: 1.8rem;
+    }
+    
+    .schedule-table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    section {
+      padding: 50px 0;
+    }
+    
+    .classes-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .hero {
+      padding: 50px 0;
+    }
+    
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+    
+    .btn-lg {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+    
+    .curriculum-table {
+      font-size: 0.9rem;
+    }
+    
+    .week-selector {
+      justify-content: center;
+    }
+  }
